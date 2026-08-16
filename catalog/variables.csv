@@ -1,0 +1,18 @@
+variable_name,label,type,mandatory,example
+requested_for,Requested for,Reference,true,Employee
+request_type,Request type,Select Box,true,New Laptop
+laptop_type,Laptop type,Select Box,true,Standard Business
+operating_system,Operating system,Select Box,true,Windows 11
+location,Work location,Reference,true,Chennai
+needed_by,Needed by,Date,true,2026-09-01
+urgency,Urgency,Select Box,true,Normal
+business_justification,Business justification,Multi Line Text,true,New employee onboarding
+data_sensitivity,Data sensitivity,Select Box,true,Internal
+accessories,Accessories,Checkbox,false,Docking Station
+manager,Manager,Reference,true,Employee manager
+special_requirements,Special requirements,Multi Line Text,false,Accessibility requirement
+existing_asset,Existing asset,Reference,false,Laptop asset
+replacement_reason,Replacement reason,Select Box,false,Device failure
+development_tools,Development tools,Multi Line Text,false,VS Code and Docker
+security_justification,Security justification,Multi Line Text,false,Restricted data requirement
+business_impact,Business impact,Multi Line Text,false,Production incident

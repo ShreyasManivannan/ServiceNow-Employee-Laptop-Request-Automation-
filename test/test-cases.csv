@@ -1,0 +1,16 @@
+ID,Scenario,Input,Expected Result,Status
+TC-01,Standard happy path,Standard Business + Normal,Manager approval then fulfillment task,Not Run
+TC-02,Manager rejection,Reject manager approval,No fulfillment task and employee notified,Not Run
+TC-03,Developer laptop,Laptop Type Developer,Manager + IT Hardware approval,Not Run
+TC-04,Executive laptop,Laptop Type Executive,Additional approval,Not Run
+TC-05,Missing manager,Employee without manager,Flow enters error handling,Not Run
+TC-06,Past date,Needed By in past,Submission blocked,Not Run
+TC-07,Short justification,Less than 20 chars,Submission blocked,Not Run
+TC-08,Replacement laptop,Replacement Laptop,Existing Asset and Reason required,Not Run
+TC-09,Restricted data,Data Sensitivity Restricted,Security justification + extra approval,Not Run
+TC-10,Critical urgency,Urgency Critical,Priority P1 and business impact required,Not Run
+TC-11,SLA,Approved fulfillment task,SLA attached and completes with task,Not Run
+TC-12,Multiple items,Two RITMs,Each item independently fulfilled,Not Run
+TC-13,Invalid value,Unsupported laptop type,Server-side validation prevents progression,Not Run
+TC-14,Notification failure,Email failure,Failure visible and request not silently completed,Not Run
+TC-15,Regression,Normal catalog request,Existing catalog behavior unaffected,Not Run
